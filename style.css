@@ -37,8 +37,7 @@ h2 {
     color: white;
 }
 
-input,
-button {
+input,button {
     width: 100%;
     display: block;
     margin-bottom: 20px;
