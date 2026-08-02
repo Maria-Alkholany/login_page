@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("./assets/trees_slow.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+img {
+    width: 100px;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 24px;
+    width: 30%;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8ox 32px rgba(0, 0, 0, 3);
+    color: white;
+}
+
+input,
+button {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 12px;
+    border: none;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+/* Pseudo elements */
+input::placeholder {
+    color: #ddd;
+}
+
+/* pseudo class */
+input:focus {
+    outline: none;
+    border: 3px solid rgba(209, 107, 165, 0.5);
+}
+
+button {
+    background: linear-gradient(45deg, #b24592, #3a4dbf);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    /* TO take time to changing  */
+}
+
+button:hover {
+    opacity: 0.8;
+    /* To make the button big or small when we touch it */
+    transform: scale(1.03);
+}
